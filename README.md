@@ -3,7 +3,7 @@ CNN-Based Plant Disease Classification Application
 
 A computer vision model trained to detect and classify plant diseases from leaf images using Convolutional Neural Networks (CNNs). This notebook-based prototype demonstrates real-time classification, batch image preprocessing, performance evaluation, and color-coded disease mapping for actionable insights. 
 
-**Note**: This is a simplified version for demonstration. Trained models are not included. The full deployed application includes a polished UI and extended features but is not public. A recorded demo of the full application in execution is available on request.
+**Note**: This is a simplified version, an early notebook iteration, for demonstration. Trained models are not included. The full deployed application includes a polished UI and extended features but is not public. A recorded demo of the full application in execution is available on request.
 
 ---
 
