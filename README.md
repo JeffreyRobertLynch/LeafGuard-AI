@@ -71,4 +71,4 @@ A **recorded demo** showing the full application in execution is available upon 
 
 ## License
 
-This project is licensed under the MIT License — see the LICENSE file for details.
+This project is for educational and demonstration purposes only. For commercial use, please contact the author.
