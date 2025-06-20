@@ -63,9 +63,8 @@ A **recorded demo** showing the full application in execution is available upon 
 
 ---
 
-## Contact
+## Author
 
-For inquiries, demo requests, or collaboration:
 [LinkedIn](https://www.linkedin.com/in/jeffrey-lynch-350930348/)
 
 ---
