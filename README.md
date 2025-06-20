@@ -65,7 +65,7 @@ A **recorded demo** showing the full application in execution is available upon 
 
 ## Author
 
-[LinkedIn](https://www.linkedin.com/in/jeffrey-lynch-350930348/)
+**Jeffrey Robert Lynch** [LinkedIn](https://www.linkedin.com/in/jeffrey-lynch-350930348/)
 
 ---
 
