@@ -77,7 +77,7 @@ Displays the class distribution of the test set, ensuring that model performance
 
 ### Generate Confusion Matrix
 
-The dark diagonal line represents correct classifications, anything outside this line is an incorrect classification. Allows for granular interpretation of model accuracy, specifically class-specific performance.
+Model performance against the full 1000 image test set. The dark diagonal line represents correct classifications. Anything outside this line is an incorrect classification. Allows for granular interpretation of model accuracy and class-specific performance.
 
 ![Generate Confusion Matrix](./deployment/docs/confusion-matrix-output.png) 
 
