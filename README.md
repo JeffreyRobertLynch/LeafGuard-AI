@@ -20,7 +20,7 @@ This precision agriculture web application uses a convolutional neural network (
 - **~94.5% accuracy** across 10 distinct disease classes
 - **Interactive GUI** supports model switching, evaluation, data analysis, and batch image classification
 - **Field Mapping:** Color-coded disease location mapping for field deployment and spatial insight
-- **Rapid Batch Processing:** Classifies 24 images with confidence scores and visualizations in ~8 seconds
+- **Rapid Batch Processing:** Classifies a 24-image batch, with confidence scores and visualizations, in under 3 seconds
 - **Scalable:** Architecture is designed for high-throughput inference, capable of processing batches of images from multiple field sites simultaneously
 
 ---
@@ -94,7 +94,7 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
 - **Disease Mapping**: Integrated color-coded field disease maps for actionable insights
 - **Prototype Interface**: Built an interactive GUI in Jupyter using `ipywidgets` to enable easy function navigation
 - **Deployment Refactor**: Ported prototype features into a FastAPI-based web app served with Uvicorn
-- **Throughput Benchmarking**: Determined throughput for batch inference, ~8 seconds for 24 images
+- **Throughput Benchmarking**: Determined throughput for batch inference, under 3 seconds for 24-image batch
 
 ---
 
