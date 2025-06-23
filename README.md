@@ -145,8 +145,9 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
 
 ### Interface Expansion
 
-- **Sidebar Enhancements**:
-  - Right panel for: database search, annotation tools, and model switching
+- **Presentation Enhancements**:
+  - Right panel: database search, annotation tools, and model switching
+  - Resize output window and finalize dimensions for polished and clean UX
 
 **All future improvements listed here are within my current skill set. I demonstrate these capabilities in other portfolio projects, such as the GlassBox XAI system (advanced model optimization, segmentation, interpretability, and human-in-the-loop features), and the Customer Scheduling Management System (full-stack development with authentication, user auditing, database integration, and an expanded interface).**
 
