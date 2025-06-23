@@ -123,7 +123,7 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
 
 - **Controlled Dataset**: High accuracy (~94.5% multiclass, ~99.5% binary) was achieved on test sets derived from lab-generated images.
 - **Field Readiness**: To ensure robust performance in real-world conditions, retraining is recommended on field images that reflect actual deployment environments (e.g., lighting, backgrounds, camera distance).
-- **Dual-Model Architecture** *(Planned)*: A proposed two-stage pipeline includes:
+- **Dual-Model Architecture**: An improved two-stage pipeline:
   - Stage 1: **Object Detection / Segmentation** to isolate leaves and reduce background noise
   - Stage 2: **Classification** on the cleaned image
 
