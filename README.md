@@ -29,43 +29,57 @@ This precision agriculture web application uses a convolutional neural network (
 
 ### Prototype GUI
 
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png)  
+Interactive widget-based interface used in the Jupyter Notebook prototype. Features shown here were later implemented in the deployed web application.
+
+![Prototype GUI](./prototype/docs/prototype-menu-gui.png)  
 
 ---
 
 ### Web Application GUI
 
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png) 
+Functional interface for the deployed FastAPI web application. Executes classification, generates visualizations, and serves PNG outputs directly to the user.
+
+![Web Application GUI](./deployment/docs/web-app-gui.png) 
 
 ---
 
-### Batch Classification
+### Run Batch Predictions
 
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png) 
+Processes a 24-image batch in under 3 seconds. Returns predicted classes along with confidence scores and visualization. Enables rapid, scalable disease detection for field applications.
 
----
-
-### Disease Mapping
-
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png) 
+![Run Batch Predictions](./deployment/docs/batch-predictions-output.png) 
 
 ---
 
-### Data Analysis - Class Distribution
+### Generate Field Map
 
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png) 
+Creates a color-coded field map based on batch image predictions, visually representing the spatial distribution of detected plant diseases for quick assessment and actionable field insights.
 
----
-
-### Model Analysis - Confusion Matrix
-
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png) 
+![Generate Field Map](./deployment/docs/field-map-output.png) 
 
 ---
 
-### Model Analysis - Multi-Class Evaluation
+### Display Class Images
 
-![Batch Processing Dashboard](./docs/screenshots/batch_processing.png) 
+Displays sample images with known class labels. Useful for visual comparison, pattern recognition, and model behavior analysis.
+
+![Display Class Images](./deployment/docs/class-images-output.png)
+
+---
+
+### Generate Class Distribution
+
+Displays the class distribution of the test set, ensuring that model performance is evaluated against a representative and balanced sample of disease categories.
+
+![Generate Class Distribution](./deployment/docs/class-distribution-output.png) 
+
+---
+
+### Generate Confusion Matrix
+
+The dark diagonal line represents correct classifications, anything outside this line is an incorrect classification. Allows for granular interpretation of model accuracy, specifically class-specific performance.
+
+![Generate Confusion Matrix](./deployment/docs/confusion-matrix-output.png) 
 
 ---
 
@@ -100,11 +114,41 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
 
 ## Limitations & Future Work
 
-This application currently identifies diseases in tomato leaves only. However, the underlying workflow is fully generalizable and can be adapted to other crops or expanded to additional disease classes. The existing model-switching architecture supports this upgrade path with minimal reconfiguration.
+### Generalization
 
-The model performs with high accuracy on test datasets of lab-generated images. For comparable results in field conditions, retraining would be required using images that reflect deployment environments. For example, accounting for lighting, backgrounds, angles, and camera quality.
+- **Current Scope**: The model identifies diseases in tomato leaves only.
+- **Expansion Path**: The workflow is fully generalizable to other crops and disease classes. Minimal architectural changes are needed thanks to the modular model-switching system.
 
-To improve field robustness and accuracy, a dual-model workflow could be implemented. The first model would apply object detection or segmentation to isolate leaves and remove noise. The second model would perform classification on the cleaned output. This extension would require an estimated 2–4 weeks of additional development and testing. In my estimation, this is the ideal solution for a wide, full-scale field deployment.
+### Field Deployment
+
+- **Controlled Dataset**: High accuracy (~94.5% multiclass, ~99.5% binary) was achieved on test sets derived from lab-generated images.
+- **Field Readiness**: To ensure robust performance in real-world conditions, retraining is recommended on field images that reflect actual deployment environments (e.g., lighting, backgrounds, camera distance).
+- **Dual-Model Architecture** *(Planned)*: A proposed two-stage pipeline includes:
+  - Stage 1: **Object Detection / Segmentation** to isolate leaves and reduce background noise
+  - Stage 2: **Classification** on the cleaned image
+
+### Human-in-the-Loop (HITL)
+
+- **Planned Features**:
+  - Image annotation interface for manual corrections
+  - Confidence thresholding to flag uncertain predictions for human review
+  - Iterative re-training from corrected examples to improve accuracy over time
+
+### Data Management & Security
+
+- **Searchable Database**: Store batch results indexed by model version, facility/site, date, and class
+- **User Authentication**:
+  - Login system for individual users, facilities, and field technicians
+  - Role-based access control for annotation, viewing, or model switching
+  - Password protection and session auditing
+- **Audit Trail**: Track user annotations, prediction outcomes, and corrections for regulatory or operational transparency
+
+### Interface Expansion
+
+- **Sidebar Enhancements**:
+  - Right panel for: database search, annotation tools, and model switching
+
+**All future improvements listed here are within my current skill set. I demonstrate these capabilities in other portfolio projects, such as the GlassBox XAI system (advanced model optimization, segmentation, interpretability, and human-in-the-loop features), and the Customer Scheduling Management System (full-stack development with authentication, user auditing, database integration, and an expanded interface).**
 
 ---
 
