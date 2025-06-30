@@ -16,7 +16,7 @@ Plant diseases are a major threat to global food production. Early identificatio
 This precision agriculture web application uses a convolutional neural network (CNN) trained on leaf images to identify and classify plant diseases, producing real-time predictions for actionable insights. 
 
 **Key Highlights:**
-- **~99.5% accuracy** for binary classification (healthy vs. diseased)
+- **~99% accuracy** for binary classification (healthy vs. diseased)
 - **~94.5% accuracy** across 10 distinct disease classes
 - **Interactive GUI** supports model switching, evaluation, data analysis, and batch image classification
 - **Field Mapping:** Color-coded disease location mapping for field deployment and spatial insight
