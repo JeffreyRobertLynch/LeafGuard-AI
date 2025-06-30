@@ -103,7 +103,7 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
 - **Data Augmentation**: Implemented augmentation techniques to increase data diversity and model robustness
 - **Model Development**: Designed and trained multiple Convolutional Neural Network (CNN) architectures for disease classification
 - **Evaluation & Tuning**: Conducted model testing to determine final model, optimized for both binary and multiclass accuracy
-- **Model Performance Benchmarking**: Achieved ~99.5% binary and ~94.5% multiclass accuracy across test data
+- **Model Performance Benchmarking**: Achieved ~99% binary and ~94.5% multiclass accuracy across test data
 - **Batch Inference Engine**: Integrated batch processing and prediction confidence visualization
 - **Disease Mapping**: Integrated color-coded field disease maps for actionable insights
 - **Prototype Interface**: Built an interactive GUI in Jupyter using `ipywidgets` to enable easy function navigation
