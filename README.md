@@ -1,8 +1,6 @@
 # LeafGuard-AI
 CNN-Based Plant Disease Classification Web Application
 
-No code provided. A **technical demo** showing the full application in execution is available upon request.
-
 ---
 
 ## Problem Domain
@@ -114,10 +112,14 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
 
 ## Limitations & Future Work
 
+---
+
 ### Generalization
 
 - **Current Scope**: The model identifies diseases in tomato leaves only.
 - **Expansion Path**: The workflow is fully generalizable to other crops and disease classes. Minimal architectural changes are needed thanks to the modular model-switching system.
+
+---
 
 ### Field Deployment
 
@@ -127,12 +129,16 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
   - Stage 1: **Object Detection / Segmentation** to isolate leaves and reduce background noise
   - Stage 2: **Classification** on the cleaned image
 
+---
+
 ### Human-in-the-Loop (HITL)
 
 - **Planned Features**:
   - Image annotation interface for manual corrections
   - Confidence thresholding to flag uncertain predictions for human review
   - Iterative re-training from corrected examples to improve accuracy over time
+
+---
 
 ### Data Management & Security
 
@@ -143,11 +149,15 @@ Originally built as a Jupyter notebook prototype with interactive GUI widgets be
   - Password protection and session auditing
 - **Audit Trail**: Track user annotations, prediction outcomes, and corrections for regulatory or operational transparency
 
+---
+
 ### Interface Expansion
 
 - **Presentation Enhancements**:
   - Right panel: database search, annotation tools, and model switching
   - Resize output window and finalize dimensions for polished and clean UX
+
+---
 
 **All future improvements listed here are within my current skill set. I demonstrate these capabilities in other portfolio projects, such as the GlassBox XAI system (advanced model optimization, segmentation, interpretability, and human-in-the-loop features), and the Customer Scheduling Management System (full-stack development with authentication, user auditing, database integration, and an expanded interface).**
 
