@@ -29,7 +29,7 @@ This precision agriculture web application uses a convolutional neural network (
 
 Interactive widget-based interface used in the Jupyter Notebook prototype. Features shown here were later implemented in the deployed web application.
 
-![Prototype GUI](./prototype/docs/prototype-menu-gui.png)  
+>![Prototype GUI](./prototype/docs/prototype-menu-gui.png)  
 
 ---
 
